@@ -1,0 +1,322 @@
+/* Estilo geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #FFD4D4 ;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+/* ESTILO CABEÇALHO */
+header{
+  padding: 50px 4%;
+
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #5e5e5e94;
+  text-decoration: none;  
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #000000;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ff9fe5;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+header .btn-contato button:hover{
+  box-shadow: 0px 0px 8px #ffffff9a;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  gap: 90px;
+}
+
+.topo-do-site h1{
+  color: #000;
+  font-size: 60px;    
+}
+
+.topo-do-site .txt-topo-site p{
+  color: #000000b4;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+section .btn-contato button{
+  position: relative;
+  left: 30%;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ff9fe5;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+section .btn-contato button:hover{
+  box-shadow: 0px 0px 8px #ffffff9a;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* BACKGROUND SEGUNDA SEÇÃO */
+
+.habilidades{
+  background: url(images/gradientpink.jpg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  padding: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  flex-direction: column;
+  align-items: flex-start;
+  height: 1300px;
+}
+
+/* ESTILO SEÇÃO 2 HABILIDADES */
+
+section.interface{
+  padding: 40px 4%; 
+}
+
+.habilidades h2{
+  color: #FFD4D4;
+  font-size: 60px;
+  text-align: center; 
+  margin-top: 20%;
+  padding: 5px;
+}
+
+section.habilidades .flex{
+  gap: 90px;
+}
+
+.interface .box-hab{
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #ff9fe5;
+  margin-top: 10%;
+}
+
+.interface .box-hab h3{
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.interface .box-hab:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffffa1;
+  transition: 0.2s;
+}
+
+.interface .box-hab ul{
+  list-style-type: none;  
+}
+
+.interface .box-hab li{
+  padding: 8px;
+  font-size: 20px;
+}
+
+/* ESTILO SEÇÃO SOBRE MIM */
+
+section.sobre{
+  padding: 40px 4%;
+}
+
+section.sobre .flex{
+  gap: 90px;
+  align-items: center;
+}
+
+.sobre .txt-sobre{
+  color: #000000;
+}
+
+.sobre .txt-img{
+  border: none;
+}
+
+.sobre .txt-sobre h2{
+  font-size: 50px;
+ line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+  color: #ec62c7;
+}
+
+.sobre .txt-sobre p{
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* ESTILO SEÇÃO 3 PROJETOS */
+
+section.projetos{
+  padding: 80px 4%;
+}
+
+section.projetos .flex{
+  gap: 80px;
+}
+
+section.projetos h2{  
+  font-size: 50px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.imgp{
+  width: 660px;
+  height: 460px;
+  background-color: #ec62c7;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+/* ESTILO CONTATO */
+
+section.contato{
+  padding: 120px 4%;
+}
+
+section.contato h2{
+  margin-bottom: 40px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 40px;
+}
+
+form input, form textarea{
+  width: 100%;
+  background-color: #fcdddd;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+form textarea{
+  resize: none;
+  max-height: 200px;
+}
+
+form .bnt-enviar{
+  margin-top: 10px;
+  text-align: center;
+  transition: 0.2;
+}
+
+form .bnt-enviar input{
+  width: 120px;
+  background-color: #ec62c7;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form .bnt-enviar input:hover{
+  box-shadow: 0px 0px 10px #ffffff9a;
+  transform: scale(1.05);
+}
+
+/* ESTILO RODAPÉ */
+footer{
+  padding: 40px 4%;
+  background-color: #ec9cd7;
+  box-shadow: 0 0 40px 10px #e6d4d4;
+}
+
+footer .flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+footer .logo-footer {
+  margin-bottom: 10px; 
+}
+
+footer p a{
+  color: #000;
+  text-decoration: none; 
+}
+
+@media screen and (max-width: 1020px){
+    /* GERAL */
+    .flex{
+      flex-direction: column;
+    }
+
+  /* MENU INICIAL */
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+}
